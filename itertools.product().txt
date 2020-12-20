@@ -1,0 +1,9 @@
+from itertools import product
+
+A = input().split()
+A = tuple(map(int, A))
+B = input().split()
+B = tuple(map(int, B))
+
+for i in product(A, B):
+    print(i,end=" ")
